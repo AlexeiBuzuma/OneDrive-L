@@ -4,15 +4,12 @@ from onedrivesdk.helpers import GetAuthCodeServer
 from .session import Session
 from .auth_provider import AuthProvider
 
-redirect_uri = ""
-client_secret = ""
-client_id = ""
+
 api_base_url = "https://api.onedrive.com/v1.0/"
 
-scopes = ['wl.signin', 'wl.offline_access', 'onedrive.readwrite']
 
-
-def authenticate_one_drive_client(auth_code=None):
+def authenticate_one_drive_client(client_id, client_secret, scopes,
+                                  redirect_uri="http://localhost:8080/",  auth_code=None):
     """ Authenticate process for OneDrive.
     """
 
