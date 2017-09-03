@@ -1,0 +1,8 @@
+auth:
+  redirect_uri: http://localhost:8080/
+  client_secret: j8pkXV4Ra5x9TcOd6OCs0di
+  client_id: c75b1cb5-3b0f-4163-b5bf-27edf5be2ca6
+  scopes:
+    - wl.signin
+    - wl.offline_access
+    - onedrive.readwrite
